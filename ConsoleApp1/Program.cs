@@ -1,1 +1,1 @@
-﻿Console.Write("Chó Thái Hoàng");
+﻿Console.Write("Nhập a");
