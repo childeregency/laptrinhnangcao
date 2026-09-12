@@ -1,22 +1,52 @@
-﻿using System;
+using System;
 
 class Program
 {
     static void Main()
     {
-        int a, b, c;
+        int a;
+        int b;
+        int c;
 
-        Console.Write("Nhap a = ");
-        a = int.Parse(Console.ReadLine());
+        // Nhap a
+        while (true)
+        {
+            Console.Write("Nhap a: ");
 
-        Console.Write("Nhap b = ");
-        b = int.Parse(Console.ReadLine());
+            if (int.TryParse(Console.ReadLine(), out a))
+            {
+                break;
+            }
 
-        Console.Write("Nhap c = ");
-        c = int.Parse(Console.ReadLine());
+            Console.WriteLine("Nhap sai, nhap lai!");
+        }
 
-        Console.WriteLine("a = " + a);
-        Console.WriteLine("b = " + b);
-        Console.WriteLine("c = " + c);
+        // Nhap b
+        while (true)
+        {
+            Console.Write("Nhap b: ");
+
+            if (int.TryParse(Console.ReadLine(), out b))
+            {
+                break;
+            }
+
+            Console.WriteLine("Nhap sai, nhap lai!");
+        }
+
+        // Nhap c
+        while (true)
+        {
+            Console.Write("Nhap c: ");
+
+            if (int.TryParse(Console.ReadLine(), out c))
+            {
+                break;
+            }
+
+            Console.WriteLine("Nhap sai, nhap lai!");
+        }
+
+        Console.WriteLine("a+b+c=" + (a + b + c));
     }
 }
